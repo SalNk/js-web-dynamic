@@ -5,8 +5,7 @@
         "prix": 60,
         "categorie": "Optiques",
         "image": "images/ampoule-led.png",
-        "description": "Distance d’éclairage : 100 mètres !",
-        "disponibilité": "oui"
+        "description": "Distance d’éclairage : 100 mètres !"
     },
     {
         "id": 2,
@@ -14,7 +13,7 @@
         "prix": 40,
         "categorie": "Freinage",
         "description": "Une qualité de freinage optimale, par tous les temps.",
-        "disponibilité": "oui"
+        "disponibilite": "oui"
     },
     {
         "id": 3,
@@ -22,20 +21,20 @@
         "prix": 5.49,
         "categorie": "Optiques",
         "description": "Pour y voir clair dans l’habitacle.",
-        "disponibilité": "non"
+        "disponibilite": "non"
     },
     {
         "id": 4,
         "nom": "Liquide de frein",
         "prix": 9.60,
         "categorie": "Freinage",
-        "disponibilité": "oui"
+        "disponibilite": "oui"
     },
     {
         "id": 5,
         "nom": "Balai d'essuie-glace",
         "prix": 29.10,
         "description": "Performances d’essuyage au top ! Longueur : 550 mm.",
-        "disponibilité": "oui"
+        "disponibilite": "oui"
     }
 ]
