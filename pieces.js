@@ -5,12 +5,16 @@ const pieces = await reponse.json();
 
 for (let i = 0; i < pieces.length; i++) {
     const article = pieces[i];
+
     const imageElement = document.createElement("img");
     imageElement.src = article.image;
-    const nomElement = document.createElement("h2");
+
+    const nomElement = document.createElement("h3");
     nomElement.innerText = article.nom;
+
     const prixElement = document.createElement("p");
     prixElement.innerText = `Prix: ${article.prix} € (${article.prix < 35 ? "€" : "€€€"})`;
+
     const categorieElement = document.createElement("p");
     categorieElement.innerText = article.categorie && "(aucune catégorie)";
 
@@ -20,12 +24,15 @@ for (let i = 0; i < pieces.length; i++) {
     const availableItem = document.createElement("p");
     availableItem.innerText = article.disponibilite === "oui" ? "En stock" : "Rupture de stock"
 
-
     const sectionFiches = document.querySelector(".fiches");
-    sectionFiches.appendChild(imageElement);
-    sectionFiches.appendChild(nomElement);
-    sectionFiches.appendChild(prixElement);
-    sectionFiches.appendChild(categorieElement);
-    sectionFiches.appendChild(descriptionItem);
-    sectionFiches.appendChild(availableItem);
+    const div = document.createElement("div")
+    sectionFiches.appendChild(div)
+    div.appendChild(imageElement);
+    div.appendChild(nomElement);
+    div.appendChild(prixElement);
+    div.appendChild(categorieElement);
+    div.appendChild(descriptionItem);
+    div.appendChild(availableItem);
+
+    sectionFiches.classList.add('flex')
 }
